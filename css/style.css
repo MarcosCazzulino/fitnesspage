@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(246, 252, 164);
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    height: 200px;
+    width: 100%;
+    margin-bottom: -97px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav{
+    height: auto;
+    width: auto;
+    background-color: rgba(22, 22, 22, 0.985);
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 10px 0px;
+}
+
+header nav ul li{
+    list-style-type: none;
+}
+
+header nav ul li a{
+    color: rgb(243, 208, 9);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+li img{
+    height: 80px;
+    width: auto;
+    border-radius: 100%;
+}
+
+/**Main*/
+
+.principal{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/img/gym.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.skew{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 0px 0px 100vh 50vw;
+    border-style: solid;
+    border-color: transparent transparent rgb(95, 95, 95) transparent;
+    z-index: 0;
+}
+
+.presentacion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 130px;
+}
+
+.presentacion h1{
+    color: rgb(252, 249, 249);
+    background-color: rgb(95, 95, 95);
+    font-size: 48px;
+    padding: 20px 190px;
+    border-radius: 90px;
+    text-shadow: 2px 2px 2px rgb(255, 255, 0);
+    margin-bottom: 160px;
+    z-index: 2;
+}
+
+.presentacion p{
+    width: 50%;
+    color: white;
+    font-size: 28px;
+    z-index: 1;
+    border-bottom: 2px groove white;
+    box-shadow: 2px 2px 10px black;
+}
+
+.steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.steps h2{
+    z-index: 3;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(95, 95, 95);
+    color: white;
+    text-shadow: 2px 2px 2px rgb(255, 255, 0);
+    font-size: 40px;
+}
+
+.circles{
+    display: flex;
+    flex-direction: row;
+    gap: 180px;
+    margin-top: 70px;
+}
+
+.aprende, .desarrolla, .cambia{
+    text-align: center;
+    font-size: 24px;
+    color: rgb(243, 208, 9);
+    padding: 25px;
+    background-color: black;
+    border-radius: 100%;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 2px rgb(61, 29, 245);
+}
+.circles h3{
+    color: black;
+    font-size: 20px;
+}
